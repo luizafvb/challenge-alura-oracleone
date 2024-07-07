@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador - Challenge Alura Oracle ONE </title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <img class="apresentacao__imagem" src="./assets/alura.png">
+            <label for="CodDecode" class="apresentacao__textomensagem">Escreva ou Cole sua mensagem:</label>
+            <input type="input" id="mensagemCodDecode" name="CodDecode" min="1" max="255" class="texto_codificar">
+            <h2 class="apresentacao__subtitulo">Apenas letras minúsculas e sem acento</h2>
+            <div class="apresentacao__links">
+                <button onclick="criptografar()" class="apresentacao__links__navegacao">
+                    Criptografar
+                </button>
+                <button onclick="descriptografar()" class="apresentacao__links__navegacao">
+                    Descriptografar
+                </button>
+            </div>
+
+        </section>
+        </div>
+        <div>
+            <textarea id="mensagemCopiar" rows="4" cols="50" readonly placeholder="Nenhuma Mensagem. Aguardando!!!" class="apresentacao__textofinal"></textarea>
+            <button onclick="copiarTexto()" class="apresentacao__links__copiarcolar">
+                Copiar Mensagem
+            </button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Luiz Vilas Boas - Desenvolvimento</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
+
+
